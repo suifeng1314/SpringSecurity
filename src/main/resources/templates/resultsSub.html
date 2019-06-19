@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"  
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8"  />
+<title>登录成功</title>
+</head>
+<body>
+  <h1>Result</h1>
+  <!--thymeleaf 对标签的符号严格效验-->
+  <p  th:text="'姓名: '+${personForm.userName}"  />
+  <p  th:text="'密码: '+${personForm.password}"  />
+</body>
+</html>

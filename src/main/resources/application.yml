@@ -1,0 +1,20 @@
+spring:
+  thymeleaf:
+    encoding: utf-8
+    mode: HTML
+    prefix: classpath:/templates/
+    check-template: true
+    suffix: .html
+    cache: false
+  cache:
+    type: redis
+    redis:
+      cache-null-values: false
+      time-to-live: 3600000ms
+  redis:
+    host: 118.24.27.37
+    port: 6379
+    database: 5
+logging:
+  level:
+    root: info
